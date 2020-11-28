@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Quicksand:wght@300;400;500;700&family=Work+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./../public/styles/form-page.css">
+        <link rel="stylesheet" href="./../public/styles/responsive-css/responsive-form-page.css">
+        <link rel="stylesheet" href="./../public/styles/main.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Workestra || Cadastar trabalho</title>
+    </head>
+
+    <body>
+        <div id="menu">
+            <a href="/workers">>> Contrate</a>
+            <a href="/works">>> Trabalhe</a>
+        </div>
+        
+        <div id="container">
+            <div id="container-content">
+                <img src="./../public/assets/contractor.svg" alt="">
+                <h1>Insira aqui os dados do trabalho</h1>
+            </div>
+
+            <div id="form-container">
+                <form action="/hire" method="POST">
+                    <fieldset>
+                        <label for="name">Nome do contrante</label>
+                        <input type="text" id="name" name="name">
+                    </fieldset>
+                    
+                    <fieldset>
+                        <label for="vacancy">Título da vaga</label>
+                        <input type="text" id="vacancy" name="vacancy">
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="acting">Precisa-se de:</label>
+                        <select name="acting" id="acting">
+                            <option value="" selected disabled></option>
+                            <option value="pedreiro">Pedreiro</option>
+                            <option value="eletricista">Eletricista</option>
+                            <option value="encanador">Encanador</option>
+                            <option value="pintor">Pintor</option>
+                            <option value="ajudante-pedreiro">Ajudante de pedreiro</option>
+                            <option value="ajudante-pintor">Ajudante de pintor</option>
+                            <option value="ajudante-eletricista">Ajudante de eletricista</option>
+                            <option value="gerais">Empregos gerais</option>
+                        </select>
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="salary">Salário (R$)</label>
+                        <input type="number" name="salary" id="salary">
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="number">Whatsapp do contratante (+55 11 111111111)</label>
+                        <input type="number" name="number" id="number">
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="details">Detalhes da vaga</label>
+                        <textarea name="details" id="details" cols="30" rows="10"></textarea>
+                    </fieldset>
+
+                    <fieldset>
+                        <button type="submit">Enviar</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </body>
+
+</html>

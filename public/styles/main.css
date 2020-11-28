@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #efefef;
+}
+
+#menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 0;
+    outline: none;
+}
+
+#menu a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 30vw;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(255, 156, 8);
+    font-family: 'Poppins', cursive;
+    font-weight: bold;
+}
+
+#menu a:hover {
+    border-bottom: 2px solid rgb(255, 156, 8);
+}
+
+
+#container #filter-menu {
+    width: 100%;
+    margin: 3vh 0 10vh;
+    background-color: #efef;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container #filter-menu form {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+#container #filter-menu fieldset {
+    border: 0;
+    padding: 15px 0;
+}
+
+#container #filter-menu fieldset select, #container #filter-menu fieldset input {
+    padding: 15px;
+    text-align: center;
+    border: 0;
+    font-family: 'Poppins';
+    font-size: 18px;
+    color: rgb(221, 129, 9);
+    font-weight: 500;
+    text-align: center;
+    outline: none;
+    background-color: rgb(248, 218, 163);
+}
+
+#container #filter-menu fieldset input {
+    padding: 0px;
+    height: 60px;
+    width: 60%;
+}
+
+#container #filter-menu fieldset button {
+    padding: 10px;
+    background: rgb(241, 130, 55);
+    border: 0;
+    cursor: pointer;
+    transition: 400ms;
+    border-radius: 100%;
+}
+
+#container #filter-menu fieldset button i{
+    font-size: 38px;
+    color: rgba(255, 255, 255, 0.986);
+}
+
+
+#container .no-results {
+    font-size: 7vw;
+    text-align: center;
+    align-self: center;
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: rgb(172, 81, 6);
+    line-height: 50px;
+}
+
+
+@media (min-width: 750px) {
+
+    #menu a {
+        width: 10vw;
+        height: 7vh;
+        font-size: 20px;
+    }
+
+    #container #filter-menu {
+        margin-bottom: 3vh;
+    }
+
+    #container #filter-menu form {
+        justify-content: space-evenly;
+        width: 90%;
+        flex-direction: row;
+    }
+
+    #container #filter-menu form fieldset input {
+        width: inherit  ;
+        height: inherit;
+        padding: 15px;
+    }
+
+    #container #filter-menu form fieldset button:hover {
+        background-color: rgb(248, 185, 69);
+        border-radius: 8px;
+    }
+
+    #container .no-results {
+        font-size: 48px;
+        line-height: 70px;
+        width: 100%;
+    }
+}

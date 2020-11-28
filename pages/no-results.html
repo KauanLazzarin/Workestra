@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Quicksand:wght@300;400;500;700&family=Work+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="./../public/styles/workers.css">
+        <link rel="stylesheet" href="./../public/styles/responsive-css/responsive-workers.css">
+        <link rel="stylesheet" href="./../public/styles/main.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Workestra || Seja um trabalhador</title>
+    </head>
+
+    <body>
+        <div id="menu">
+            <a href="/workers">>> Contrate</a>
+            <a href="/works">>> Trabalhe</a>
+        </div>
+        
+        <div id="container">
+            <h1>Trabalhadores encontrados conforme a sua pesquisa.</h1>
+
+            <div id="filter-menu">
+                <form action="/filter-works" method="post">
+                    <fieldset>
+                        <select name="filterId" id="filterId">
+                            <option value="" disabled="" selected>Filtrar por profissão</option>
+                            <option value="pedreiro">Pedreiro</option>
+                            <option value="eletricista">Eletricista</option>
+                            <option value="encanador">Encanador</option>
+                            <option value="pintor">Pintor</option>
+                            <option value="ajudante-pedreiro">Ajudante de pedreiro</option>
+                            <option value="ajudante-pintor">Ajudante de pintor</option>
+                            <option value="ajudante-eletricista">Ajudante de eletricista</option>
+                            <option value="gerais">Empregos gerais</option>
+                        </select>
+                    </fieldset>
+
+                    <fieldset>
+                        <input type="number" name="actingTime" id="actingTime" placeholder="Tempo de atuação">
+                    </fieldset>
+    
+                    <fieldset>
+                        <button type="submit"><i class="material-icons">filter_list</i></button>
+                    </fieldset>
+                </form>
+            </div>
+
+            <div id="no-results">
+                
+            </div>
+    </body>
+
+</html>

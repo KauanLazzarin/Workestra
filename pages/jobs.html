@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Quicksand:wght@300;400;500;700&family=Work+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="./../public/styles/jobs.css">
+        <link rel="stylesheet" href="./../public/styles/responsive-css/responsive-jobs.css">
+        <link rel="stylesheet" href="./../public/styles/main.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Workestra || Seja um trabalhador</title>
+    </head>
+
+    <body>
+        <div id="menu">
+            <a href="/workers">>> Contrate</a>
+            <a href="/works">>> Trabalhe</a>
+        </div>
+
+        <div id="container">
+            <h1>Todos os trabalhos aqui!</h1>
+
+            <div id="filter-menu">
+                <form action="/filter-jobs" method="post">
+                    <fieldset>
+                        <select name="filterId" id="filterId">
+                            <option value="" disabled="" selected>Filtrar por profissão</option>
+                            <option value="pedreiro">Pedreiro</option>
+                            <option value="eletricista">Eletricista</option>
+                            <option value="encanador">Encanador</option>
+                            <option value="pintor">Pintor</option>
+                            <option value="ajudante-pedreiro">Ajudante de pedreiro</option>
+                            <option value="ajudante-pintor">Ajudante de pintor</option>
+                            <option value="ajudante-eletricista">Ajudante de eletricista</option>
+                            <option value="gerais">Empregos gerais</option>
+                        </select>
+                    </fieldset>
+    
+                    <fieldset>
+                        <button type="submit"><i class="material-icons">filter_list</i></button>
+                    </fieldset>
+                </form>
+            </div>
+    
+
+            <div id="works-container">
+
+                {% for work in manipulatedJobData %}
+                <div class="work">
+                    <h2>{{work.title}}</h2>
+                    <h3>{{work.name}}</h3>
+                    <h4>>> {{work.acting}}</h4>
+                    <small>R$ {{work.salary}}</small>
+                    <p>{{work.details}}</p>    
+                    <a href="https://api.whatsapp.com/send?1=pt_BR&phone=55{{work.number}}&text=Olá {{work.name}}, gostaria de conversar sobre a vaga de {{work.acting}} postada no Workestra!">Contatar pelo whatsapp</a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </body>
+
+</html>

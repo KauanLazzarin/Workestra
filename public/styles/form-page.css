@@ -1,0 +1,107 @@
+body  {
+    background-color: rgb(255, 244, 224);
+}
+
+#container {
+    margin-top: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+}
+
+#container #container-content {
+    padding: 10vh 0;
+}
+
+#container #container-content h1 {
+    /* margin: 5vh 0; */
+    padding: 25px;
+    font-size: 52px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 54px;
+    color:rgb(219, 92, 8);
+}
+
+
+#container #container-content img {
+    border-radius: 100%;
+    min-width: 100px;
+    width: 20vw;
+    transition: 800ms;
+}
+
+#container #container-content img:hover {
+    transform: rotate(180deg);
+}
+
+
+#container #form-container {
+    width: 98%;
+    background-color: rgb(253, 216, 167);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+#container #form-container fieldset{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border: 0;
+    width: 100%;
+    margin: 5vh 0;
+}
+
+#container #form-container label {
+    width: 100%;
+    font-family: 'Quicksand', cursive;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgb(65, 55, 25);
+    padding: 10px 0;
+}
+
+#container #form-container fieldset input,
+#container #form-container fieldset textarea, 
+#container #form-container fieldset select {
+    width: 100%;
+    height: 40px;
+    font-family: 'Poppins';
+    font-size: 18px;
+    color: rgb(221, 129, 9);
+    font-weight: 500;
+    text-align: center;
+    border: 1px solid orange;
+    outline: none;
+}
+
+#form-container fieldset textarea {
+    height: auto !important;
+    resize: vertical;
+}
+
+#container #form-container fieldset button {
+    width: 20vw;
+    height: 50px;
+    border: 0;
+    background-color: rgba(241, 196, 153, 0.514);
+    border-radius: 8px;
+    font-size: 20px;
+    color: rgba(161, 112, 4, 0.966);
+    font-family: 'Poppins';
+    cursor: pointer;
+    transition: 200ms;
+}
+
+#container #form-container fieldset button:hover {
+    color: rgba(241, 196, 153, 0.514);
+    background-color: rgba(161, 112, 4, 0.966);
+}

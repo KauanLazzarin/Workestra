@@ -1,0 +1,38 @@
+@media(min-width: 750px) {
+    body {
+        background-color: rgb(250, 231, 177) !important;
+    }
+
+    #container {
+        justify-content: space-between;
+        flex-direction: row;
+        margin:3vh 0;
+        margin-bottom: 10vh;
+        height: 80%;
+    }
+
+    #container #container-content {
+        width: 50%;
+        margin-top: -40vh;
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #container #container-content h1 {
+        font-size: 70px;
+        line-height: 80px;
+    }
+
+    #container #container-content img {
+        max-width: 150px;
+    }
+
+    #container #form-container {
+        width: 50%;
+        border-radius: 40px;
+        margin-right: 20px;
+    }
+}

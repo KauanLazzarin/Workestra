@@ -1,0 +1,60 @@
+@media (min-width: 750px) {
+    body {
+        background: url('./../../assets/bg-desktop.svg');
+        
+        background-color: rgb(241, 226, 163) !important;
+        background-repeat: no-repeat;
+        background-position:  right;
+        background-size: 50vw;
+        background-blend-mode: darken;
+    }
+
+    #content {
+        align-items: flex-start;
+        justify-content: space-around;
+        height: 100vh;
+    }
+
+    #content #lateral-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 50%;
+        margin-left: 30px;
+        text-align: center;
+    }
+
+    #content #lateral-content h1 {
+        font-size: 10vw;
+        line-height: 120px;
+        text-shadow: 2px 4px 7px rgb(218, 128, 10); 
+    }
+
+    #content #lateral-content p {
+        width: 40vw;
+        margin-left: -100px;
+    }
+
+    #content #lateral-content img {
+        display: none;
+        max-width: 180px;
+        border-radius: 120px;
+    }
+
+
+    #content #contrat, #content #beworker {
+        width: 30vw;
+        box-shadow: 23px 5px 55px rgb(202, 202, 199);
+    }
+
+    #content #buttons {
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    #content #buttons #contrat {
+        margin: 0;
+    }
+}
